@@ -1,0 +1,803 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="aSz-Sz-4AY">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--first-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="first" id="BYZ-38-t0r" customClass="ViewController" customModule="SmartShop" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This is one of technical products developed by IOT Group 7.              Please enjoy it!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eD0-En-EPc">
+                                <rect key="frame" x="67" y="202" width="240" height="228"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome to Smart Shopping!    You can find an incrediable shopping experience with elegance!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IJ7-mR-U4S">
+                                <rect key="frame" x="48" y="104" width="278" height="118"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Info" id="DYt-cI-OAm"/>
+                    <connections>
+                        <outlet property="distanceReading" destination="eD0-En-EPc" id="WtE-FJ-J9u"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3080.5" y="251.5"/>
+        </scene>
+        <!--Smart Shopping-->
+        <scene sceneID="bIe-Sd-P7p">
+            <objects>
+                <viewController title="Smart Shopping" id="MhY-Jz-x5Z" customClass="ViewController" customModule="SmartShop" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="C2m-lW-6rP"/>
+                        <viewControllerLayoutGuide type="bottom" id="IKa-4k-EBU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ig9-dS-BfK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Jj-2r-T9e">
+                                <rect key="frame" x="325" y="95" width="30" height="30"/>
+                                <state key="normal" title="Info"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="oUR-Qw-xO6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jhF-3d-87F">
+                                <rect key="frame" x="20" y="178" width="150" height="103"/>
+                                <state key="normal" title="Button" backgroundImage="foods">
+                                    <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="nCa-k3-rW2" kind="show" id="NrT-WL-HmG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hkb-zP-IjX">
+                                <rect key="frame" x="13" y="326" width="163" height="116"/>
+                                <state key="normal" title="Button" backgroundImage="video">
+                                    <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="dFG-2U-JfB" kind="show" id="BOV-7C-Mfi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xD2-xi-Iyu">
+                                <rect key="frame" x="205" y="178" width="150" height="103"/>
+                                <state key="normal" title="Button" backgroundImage="manclothes">
+                                    <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="qZg-AN-WQH" kind="show" id="ii3-gQ-oYR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4oq-61-6EZ">
+                                <rect key="frame" x="13" y="483" width="163" height="103"/>
+                                <state key="normal" title="Button" backgroundImage="woman">
+                                    <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="yrK-Kl-zh9" kind="show" id="0qd-zb-q2M"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oaG-Eb-ymL">
+                                <rect key="frame" x="184" y="328" width="171" height="114"/>
+                                <state key="normal" title="Button" backgroundImage="computer">
+                                    <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="f4q-So-AgV" kind="show" id="tX1-JD-uaS"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="shop" translatesAutoresizingMaskIntoConstraints="NO" id="hu2-iw-i3Q">
+                                <rect key="frame" x="55" y="72" width="264" height="75"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vjV-Ik-Sj6">
+                                <rect key="frame" x="194" y="483" width="150" height="103"/>
+                                <state key="normal" title="Button" backgroundImage="furniture">
+                                    <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="07T-Qt-74W" kind="show" id="bt8-nJ-6bF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Smart shopping" id="DkV-Ix-0vf">
+                        <barButtonItem key="rightBarButtonItem" title="Cart" id="5SK-5N-egm">
+                            <connections>
+                                <segue destination="sWV-cp-a74" kind="show" id="pM4-N4-U0L"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <segue destination="GpJ-pR-opQ" kind="show" identifier="showInformation" id="zZ6-jT-q99"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kLW-HZ-bMF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2473.5" y="251.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="PRX-cv-csN">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aSz-Sz-4AY" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="CkT-cu-FSP">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="MhY-Jz-x5Z" kind="relationship" relationship="rootViewController" id="Dey-CS-azI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CnH-8k-ZmT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1567" y="245"/>
+        </scene>
+        <!--Cart-->
+        <scene sceneID="scT-MR-6Ey">
+            <objects>
+                <tableViewController id="sWV-cp-a74" customClass="CartTableViewController" customModule="SmartShop" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" sectionHeaderHeight="28" sectionFooterHeight="28" id="bUR-UW-oUV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="CartTableViewCell" rowHeight="90" id="SW0-Bn-XuW" customClass="CartTableViewCell" customModule="SmartShop" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="375" height="90"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SW0-Bn-XuW" id="yci-iD-RoW">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="89.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="default" translatesAutoresizingMaskIntoConstraints="NO" id="xWa-aH-vRo">
+                                            <rect key="frame" x="0.0" y="-1" width="110" height="89.5"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="re0-fd-8P7">
+                                            <rect key="frame" x="118" y="8" width="200" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GpT-nP-Yvu">
+                                            <rect key="frame" x="118" y="60" width="49" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="nameLabel" destination="re0-fd-8P7" id="M2v-EF-Cy5"/>
+                                    <outlet property="number" destination="GpT-nP-Yvu" id="jDN-ml-4vN"/>
+                                    <outlet property="photoImageView" destination="xWa-aH-vRo" id="alf-p6-j9E"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="sWV-cp-a74" id="U0o-ft-hYU"/>
+                            <outlet property="delegate" destination="sWV-cp-a74" id="92g-ip-f4a"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Cart" id="1Lb-Hh-9Ud"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xgA-j7-ZbJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1784.5" y="1247.5"/>
+        </scene>
+        <!--FOOD-->
+        <scene sceneID="MKR-eh-Ol2">
+            <objects>
+                <tableViewController id="nCa-k3-rW2" customClass="MealTableViewController" customModule="SmartShop" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" sectionHeaderHeight="28" sectionFooterHeight="28" id="TMf-Lz-Ykp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="MealTableViewCell" rowHeight="90" id="yTK-MP-qNH" customClass="MealTableViewCell" customModule="SmartShop" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="375" height="90"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yTK-MP-qNH" id="i4e-LE-77X">
+                                    <rect key="frame" x="0.0" y="0.0" width="342" height="89.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GSM-aW-QaM">
+                                            <rect key="frame" x="102" y="0.0" width="209" height="29"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Hk-gN-evm" customClass="RatingControl" customModule="SmartShop" customModuleProvider="target">
+                                            <rect key="frame" x="102" y="37" width="240" height="40"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="default" translatesAutoresizingMaskIntoConstraints="NO" id="QjV-K4-cSO">
+                                            <rect key="frame" x="0.0" y="0.0" width="103" height="88.5"/>
+                                        </imageView>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="nameLabel" destination="GSM-aW-QaM" id="iOn-nR-ooT"/>
+                                    <outlet property="photoImageView" destination="QjV-K4-cSO" id="Dtd-nn-4EU"/>
+                                    <outlet property="ratingControl" destination="3Hk-gN-evm" id="RTS-0F-PRU"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="nCa-k3-rW2" id="YcA-ml-ksq"/>
+                            <outlet property="delegate" destination="nCa-k3-rW2" id="AeK-F3-rf9"/>
+                        </connections>
+                    </tableView>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="FOOD" id="aOO-vJ-4tW">
+                        <barButtonItem key="rightBarButtonItem" title="Cart" id="Qxz-Kn-JYl">
+                            <connections>
+                                <segue destination="sWV-cp-a74" kind="show" id="Ke9-mj-Mfu"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <segue destination="oP3-Gb-eMX" kind="show" identifier="showview" id="93N-Nj-eMO"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rOp-9p-g2y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2353.5" y="1263.5"/>
+        </scene>
+        <!--Products-->
+        <scene sceneID="ViB-uN-zMg">
+            <objects>
+                <viewController storyboardIdentifier="Products" useStoryboardIdentifierAsRestorationIdentifier="YES" id="oP3-Gb-eMX" customClass="FoodViewController" customModule="SmartShop" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dkg-zo-Y08"/>
+                        <viewControllerLayoutGuide type="bottom" id="2IB-NU-bja"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KIP-fM-xNp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="gGm-FS-Kyr">
+                                <rect key="frame" x="16" y="80" width="343" height="353"/>
+                                <subviews>
+                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="320" image="default" translatesAutoresizingMaskIntoConstraints="NO" id="ccN-GD-kNv">
+                                        <rect key="frame" x="12" y="0.0" width="320" height="320"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="ccN-GD-kNv" secondAttribute="height" multiplier="1:1" id="UMg-ha-RO7"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gabbage" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ip7-J3-bUH">
+                                        <rect key="frame" x="137" y="332" width="70" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JEM-X5-lhF">
+                                <rect key="frame" x="147" y="513" width="47" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Quanity:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mSk-Z5-Yv5">
+                                <rect key="frame" x="64" y="517" width="64" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mvc-8J-kU0">
+                                <rect key="frame" x="202" y="498" width="30" height="30"/>
+                                <state key="normal" title="+"/>
+                                <connections>
+                                    <action selector="add:" destination="oP3-Gb-eMX" eventType="touchUpInside" id="pHN-6J-mjW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BPj-JA-0V3">
+                                <rect key="frame" x="202" y="536" width="30" height="30"/>
+                                <state key="normal" title="-"/>
+                                <connections>
+                                    <action selector="minus:" destination="oP3-Gb-eMX" eventType="touchUpInside" id="xpd-Tb-Trf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="irH-Bq-qu9">
+                                <rect key="frame" x="235" y="513" width="82" height="30"/>
+                                <state key="normal" title="Buy"/>
+                                <connections>
+                                    <action selector="buyItem:" destination="oP3-Gb-eMX" eventType="touchUpInside" id="ZRW-q2-RLV"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7CS-nI-b1Q">
+                                <rect key="frame" x="68" y="565" width="263" height="50"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This is the most popular product" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lHC-iE-2ra">
+                                <rect key="frame" x="46" y="469" width="249" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gGm-FS-Kyr" firstAttribute="leading" secondItem="KIP-fM-xNp" secondAttribute="leadingMargin" id="P5N-bk-rBj"/>
+                            <constraint firstItem="gGm-FS-Kyr" firstAttribute="top" secondItem="dkg-zo-Y08" secondAttribute="bottom" constant="16" id="gKD-S2-Sk6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gGm-FS-Kyr" secondAttribute="trailing" id="v6e-bY-tSO"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Products" id="66S-Px-wai"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="inforLabel" destination="7CS-nI-b1Q" id="k1F-k1-Lw2"/>
+                        <outlet property="labelname" destination="Ip7-J3-bUH" id="WbW-Dc-hBv"/>
+                        <outlet property="photoImage" destination="ccN-GD-kNv" id="o4L-Mn-OE5"/>
+                        <outlet property="quantity" destination="JEM-X5-lhF" id="JOe-NY-Ts4"/>
+                        <segue destination="Rz0-TJ-bJE" kind="show" identifier="ratingControl" id="0Iv-L8-KLv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9y8-k2-jqK" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2907.5" y="1263.5"/>
+        </scene>
+        <!--Feedback-->
+        <scene sceneID="VEg-yF-cLj">
+            <objects>
+                <viewController id="Rz0-TJ-bJE" customClass="FeedbackViewController" customModule="SmartShop" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oTH-mN-hqz"/>
+                        <viewControllerLayoutGuide type="bottom" id="dLT-GU-rRT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LtP-sP-IUW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="wDC-Fd-rwk">
+                                <rect key="frame" x="16" y="80" width="343" height="409"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u7F-Oq-Yau">
+                                        <rect key="frame" x="151" y="0.0" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="320" image="default" translatesAutoresizingMaskIntoConstraints="NO" id="nuF-Wp-iwa">
+                                        <rect key="frame" x="12" y="33" width="320" height="320"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="nuF-Wp-iwa" secondAttribute="height" multiplier="1:1" id="ij2-61-yQz"/>
+                                        </constraints>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="44" translatesAutoresizingMaskIntoConstraints="NO" id="FBw-Q4-qwN" customClass="RatingControl" customModule="SmartShop" customModuleProvider="target">
+                                        <rect key="frame" x="52" y="365" width="240" height="44"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kG4-M4-x1h">
+                                <rect key="frame" x="116" y="549" width="129" height="30"/>
+                                <state key="normal" title="Send the feedback"/>
+                                <connections>
+                                    <segue destination="nAR-H6-LL5" kind="unwind" unwindAction="myUnwindAction:" id="34v-09-BsL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wDC-Fd-rwk" firstAttribute="top" secondItem="oTH-mN-hqz" secondAttribute="bottom" constant="16" id="1kf-rk-6Uc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wDC-Fd-rwk" secondAttribute="trailing" id="IqL-pL-fKb"/>
+                            <constraint firstItem="wDC-Fd-rwk" firstAttribute="leading" secondItem="LtP-sP-IUW" secondAttribute="leadingMargin" id="VLL-n5-OqO"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Feedback" id="fRQ-NY-XTs"/>
+                    <connections>
+                        <outlet property="labelName" destination="u7F-Oq-Yau" id="vOo-J2-CMd"/>
+                        <outlet property="photoImageView" destination="nuF-Wp-iwa" id="Z5T-L6-6Nx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iPZ-CK-5mt" sceneMemberID="firstResponder"/>
+                <exit id="nAR-H6-LL5" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="3489.5" y="1263.5"/>
+        </scene>
+        <!--Item information-->
+        <scene sceneID="JPd-Mr-aaF">
+            <objects>
+                <viewController id="GpJ-pR-opQ" customClass="ProductViewController" customModule="SmartShop" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Fr0-Em-gB8"/>
+                        <viewControllerLayoutGuide type="bottom" id="dxR-8t-sRR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KRO-gq-2UZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="Pc0-Y3-tj4">
+                                <rect key="frame" x="16" y="80" width="343" height="353"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hua-KK-6mg">
+                                        <rect key="frame" x="151" y="0.0" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="320" image="default" translatesAutoresizingMaskIntoConstraints="NO" id="zcA-hO-doV">
+                                        <rect key="frame" x="12" y="33" width="320" height="320"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="zcA-hO-doV" secondAttribute="height" multiplier="1:1" id="WIX-BD-U8j"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Xm-pU-d0m">
+                                <rect key="frame" x="125" y="491" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BYU-Qz-3qF">
+                                <rect key="frame" x="45" y="480" width="267" height="139"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Pc0-Y3-tj4" firstAttribute="leading" secondItem="KRO-gq-2UZ" secondAttribute="leadingMargin" id="b4y-ae-3MF"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Pc0-Y3-tj4" secondAttribute="trailing" id="rlj-jA-iTF"/>
+                            <constraint firstItem="Pc0-Y3-tj4" firstAttribute="top" secondItem="Fr0-Em-gB8" secondAttribute="bottom" constant="16" id="uiI-Wx-P7o"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Item information" id="aoq-J3-WhH"/>
+                    <connections>
+                        <outlet property="ProductInfo" destination="BYU-Qz-3qF" id="aMw-5A-psp"/>
+                        <outlet property="labelName" destination="Hua-KK-6mg" id="o26-Y7-h6V"/>
+                        <outlet property="photoImageView" destination="zcA-hO-doV" id="ESS-fw-YO0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9dQ-b5-XFZ" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2457.5" y="-599.5"/>
+        </scene>
+        <!--Video-->
+        <scene sceneID="u3t-Xh-ekL">
+            <objects>
+                <tableViewController id="dFG-2U-JfB" customClass="VideoTableViewController" customModule="SmartShop" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" sectionHeaderHeight="28" sectionFooterHeight="28" id="xy2-lo-sgO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="VideoTableViewCell" rowHeight="90" id="5K6-XU-U01" customClass="VideoTableViewCell" customModule="SmartShop" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="375" height="90"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5K6-XU-U01" id="7IB-i7-kVU">
+                                    <rect key="frame" x="0.0" y="0.0" width="342" height="89.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="default" translatesAutoresizingMaskIntoConstraints="NO" id="bOs-sX-nBc">
+                                            <rect key="frame" x="0.0" y="0.0" width="103" height="88.5"/>
+                                        </imageView>
+                                        <view userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9oc-CA-L8p" customClass="RatingControl" customModule="SmartShop" customModuleProvider="target">
+                                            <rect key="frame" x="102" y="37" width="240" height="40"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SkY-aW-o8O">
+                                            <rect key="frame" x="102" y="0.0" width="247" height="29"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="nameLabel" destination="SkY-aW-o8O" id="bqC-L2-RDo"/>
+                                    <outlet property="photoImageView" destination="bOs-sX-nBc" id="41k-JJ-PjW"/>
+                                    <outlet property="ratingControl" destination="9oc-CA-L8p" id="1dK-9e-vOy"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="dFG-2U-JfB" id="mrw-Th-pw4"/>
+                            <outlet property="delegate" destination="dFG-2U-JfB" id="4X0-Dk-yqg"/>
+                        </connections>
+                    </tableView>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Video" id="ZfD-Eo-aQ2">
+                        <barButtonItem key="rightBarButtonItem" title="Cart" id="7Sn-lI-x0C">
+                            <connections>
+                                <segue destination="sWV-cp-a74" kind="show" id="aMi-Qu-m6v"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <segue destination="oP3-Gb-eMX" kind="show" identifier="showview2" id="fqJ-Hv-9rp"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q9A-Ia-CXe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2972.5" y="-599.5"/>
+        </scene>
+        <!--Perfume-->
+        <scene sceneID="cgn-jR-PIN">
+            <objects>
+                <tableViewController id="yrK-Kl-zh9" customClass="PerfumeTableViewController" customModule="SmartShop" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" sectionHeaderHeight="28" sectionFooterHeight="28" id="pkS-zY-vnA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="PerfumeTableViewCell" rowHeight="90" id="KDm-3G-eF8" customClass="PerfumeTableViewCell" customModule="SmartShop" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="375" height="90"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KDm-3G-eF8" id="NRk-oR-vTx">
+                                    <rect key="frame" x="0.0" y="0.0" width="342" height="89.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O8Z-Hw-ozs">
+                                            <rect key="frame" x="102" y="0.0" width="247" height="29"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tqd-d8-nUU" customClass="RatingControl" customModule="SmartShop" customModuleProvider="target">
+                                            <rect key="frame" x="102" y="37" width="240" height="40"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="default" translatesAutoresizingMaskIntoConstraints="NO" id="fkJ-Kt-yRd">
+                                            <rect key="frame" x="0.0" y="0.0" width="103" height="88.5"/>
+                                        </imageView>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="labelName" destination="O8Z-Hw-ozs" id="ecd-Xp-UVY"/>
+                                    <outlet property="photoImageView" destination="fkJ-Kt-yRd" id="a6u-oS-JLc"/>
+                                    <outlet property="ratingControl" destination="Tqd-d8-nUU" id="SNB-02-p4r"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="yrK-Kl-zh9" id="QvW-WG-Hlx"/>
+                            <outlet property="delegate" destination="yrK-Kl-zh9" id="gJt-gn-ggh"/>
+                        </connections>
+                    </tableView>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Perfume" id="Jdt-HZ-m75">
+                        <barButtonItem key="rightBarButtonItem" title="Cart" id="IDH-Q8-eTw">
+                            <connections>
+                                <segue destination="sWV-cp-a74" kind="show" id="6ri-RX-vhF"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <segue destination="oP3-Gb-eMX" kind="show" identifier="showview3" id="LxF-fN-Tb3"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WDU-KL-gmA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1904" y="-608"/>
+        </scene>
+        <!--Furniture-->
+        <scene sceneID="KSc-sK-Mw3">
+            <objects>
+                <tableViewController id="07T-Qt-74W" customClass="FurnitureTableViewController" customModule="SmartShop" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" sectionHeaderHeight="28" sectionFooterHeight="28" id="Wss-Zg-1w3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="FurnitureTableViewCell" rowHeight="90" id="ihF-Wp-EMf" customClass="FurnitureTableViewCell" customModule="SmartShop" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="375" height="90"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ihF-Wp-EMf" id="g4y-v3-Y1q">
+                                    <rect key="frame" x="0.0" y="0.0" width="342" height="89.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q6g-VB-PNR">
+                                            <rect key="frame" x="102" y="0.0" width="247" height="29"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ly1-27-1ch" customClass="RatingControl" customModule="SmartShop" customModuleProvider="target">
+                                            <rect key="frame" x="102" y="37" width="240" height="40"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="default" translatesAutoresizingMaskIntoConstraints="NO" id="vbZ-ce-kfn">
+                                            <rect key="frame" x="0.0" y="0.0" width="103" height="88.5"/>
+                                        </imageView>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="nameLabel" destination="Q6g-VB-PNR" id="sQI-mC-G8w"/>
+                                    <outlet property="photoImageView" destination="vbZ-ce-kfn" id="9Yg-DC-jwb"/>
+                                    <outlet property="ratingControl" destination="ly1-27-1ch" id="sep-2Z-A4d"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="07T-Qt-74W" id="sfH-LD-ujX"/>
+                            <outlet property="delegate" destination="07T-Qt-74W" id="Kxy-DG-5og"/>
+                        </connections>
+                    </tableView>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Furniture" id="h1f-GI-ixB">
+                        <barButtonItem key="rightBarButtonItem" title="Cart" id="S6h-Ru-ysO">
+                            <connections>
+                                <segue destination="sWV-cp-a74" kind="show" id="gqo-IS-3mN"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <segue destination="oP3-Gb-eMX" kind="show" identifier="showview4" id="o9h-Ou-iU0"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2vJ-mz-Ib7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1308" y="-622"/>
+        </scene>
+        <!--Electronic-->
+        <scene sceneID="H1t-s8-qYA">
+            <objects>
+                <tableViewController id="f4q-So-AgV" customClass="ElectronicTableViewController" customModule="SmartShop" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" sectionHeaderHeight="28" sectionFooterHeight="28" id="8y3-Jq-pCB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="ElectronicTableViewCell" rowHeight="90" id="teq-tl-uwl" customClass="ElectronicTableViewCell" customModule="SmartShop" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="375" height="90"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="teq-tl-uwl" id="aV3-eW-Go0">
+                                    <rect key="frame" x="0.0" y="0.0" width="342" height="89.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n5d-lY-Snb">
+                                            <rect key="frame" x="102" y="0.0" width="247" height="29"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tNt-PY-VHN" customClass="RatingControl" customModule="SmartShop" customModuleProvider="target">
+                                            <rect key="frame" x="102" y="37" width="240" height="40"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="default" translatesAutoresizingMaskIntoConstraints="NO" id="LMq-Lk-mwu">
+                                            <rect key="frame" x="0.0" y="0.0" width="103" height="88.5"/>
+                                        </imageView>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="nameLabel" destination="n5d-lY-Snb" id="cfX-ph-Ql5"/>
+                                    <outlet property="photoImageView" destination="LMq-Lk-mwu" id="8YE-Fo-Tjm"/>
+                                    <outlet property="ratingControl" destination="tNt-PY-VHN" id="qYV-1V-zNm"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="f4q-So-AgV" id="Hr9-de-Pj5"/>
+                            <outlet property="delegate" destination="f4q-So-AgV" id="grR-2b-vco"/>
+                        </connections>
+                    </tableView>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Electronic" id="PyA-60-bpo">
+                        <barButtonItem key="rightBarButtonItem" title="Cart" id="9bD-SW-3AM">
+                            <connections>
+                                <segue destination="sWV-cp-a74" kind="show" id="e19-Ot-fcm"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <segue destination="oP3-Gb-eMX" kind="show" identifier="showview5" id="CBp-2e-P2B"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RPb-rn-vyU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1147.5" y="1247.5"/>
+        </scene>
+        <!--Clothes-->
+        <scene sceneID="1VP-2F-gga">
+            <objects>
+                <tableViewController id="qZg-AN-WQH" customClass="ClothesTableViewController" customModule="SmartShop" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" sectionHeaderHeight="28" sectionFooterHeight="28" id="byV-Bm-gfv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="ClothesTableViewCell" rowHeight="90" id="sYz-qX-MLU" customClass="ClothesTableViewCell" customModule="SmartShop" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="375" height="90"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sYz-qX-MLU" id="QeI-1L-mne">
+                                    <rect key="frame" x="0.0" y="0.0" width="342" height="89.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8VZ-Pi-tDz" customClass="RatingControl" customModule="SmartShop" customModuleProvider="target">
+                                            <rect key="frame" x="102" y="37" width="240" height="40"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="default" translatesAutoresizingMaskIntoConstraints="NO" id="yw7-ni-cm4">
+                                            <rect key="frame" x="0.0" y="0.0" width="103" height="88.5"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z55-Xe-cwF">
+                                            <rect key="frame" x="102" y="0.0" width="247" height="29"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="nameLabel" destination="Z55-Xe-cwF" id="HL4-u6-ygf"/>
+                                    <outlet property="photoImageView" destination="yw7-ni-cm4" id="bCO-DL-CSe"/>
+                                    <outlet property="ratingControl" destination="8VZ-Pi-tDz" id="Y43-LE-4Ef"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="qZg-AN-WQH" id="Qi7-13-fHm"/>
+                            <outlet property="delegate" destination="qZg-AN-WQH" id="rgZ-zX-SYM"/>
+                        </connections>
+                    </tableView>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Clothes" id="VFg-Xd-A8K">
+                        <barButtonItem key="rightBarButtonItem" title="Cart" id="0Wc-8e-oRs">
+                            <connections>
+                                <segue destination="sWV-cp-a74" kind="show" id="pfl-36-ZTS"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <segue destination="oP3-Gb-eMX" kind="show" identifier="showview6" id="2rL-DV-UAA"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wzH-J1-CQ8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3653" y="218"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="computer" width="405" height="190"/>
+        <image name="default" width="540" height="540"/>
+        <image name="foods" width="300" height="150"/>
+        <image name="furniture" width="994" height="677"/>
+        <image name="manclothes" width="424" height="283"/>
+        <image name="shop" width="925" height="384"/>
+        <image name="video" width="147" height="135"/>
+        <image name="woman" width="305" height="171"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="2rL-DV-UAA"/>
+        <segue reference="pfl-36-ZTS"/>
+    </inferredMetricsTieBreakers>
+</document>

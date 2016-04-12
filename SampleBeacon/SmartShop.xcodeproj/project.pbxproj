@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9304ED091C065F5D0066D2D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9304ED081C065F5D0066D2D9 /* AppDelegate.swift */; };
+		9304ED0B1C065F5D0066D2D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9304ED0A1C065F5D0066D2D9 /* ViewController.swift */; };
+		9304ED101C065F5D0066D2D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9304ED0F1C065F5D0066D2D9 /* Assets.xcassets */; };
+		9304ED131C065F5D0066D2D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9304ED111C065F5D0066D2D9 /* LaunchScreen.storyboard */; };
+		9304ED1E1C065F5D0066D2D9 /* SampleBeaconTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9304ED1D1C065F5D0066D2D9 /* SampleBeaconTests.swift */; };
+		9304ED291C065F5D0066D2D9 /* SampleBeaconUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9304ED281C065F5D0066D2D9 /* SampleBeaconUITests.swift */; };
+		931DD1C91C128E8A007BFD5E /* FoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931DD1C81C128E8A007BFD5E /* FoodViewController.swift */; };
+		9374D4001C13E45F00826F02 /* CartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9374D3FF1C13E45F00826F02 /* CartTableViewCell.swift */; };
+		9374D4021C13E63300826F02 /* CartTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9374D4011C13E63300826F02 /* CartTableViewController.swift */; };
+		9374D4041C179D7B00826F02 /* FeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9374D4031C179D7B00826F02 /* FeedbackViewController.swift */; };
+		9374D4061C1C95E200826F02 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9374D4051C1C95E100826F02 /* ProductViewController.swift */; };
+		9374D4081C1D18EE00826F02 /* VideoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9374D4071C1D18EE00826F02 /* VideoTableViewController.swift */; };
+		9374D40A1C1D191800826F02 /* VideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9374D4091C1D191800826F02 /* VideoTableViewCell.swift */; };
+		9374D40C1C1E01D400826F02 /* PerfumeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9374D40B1C1E01D400826F02 /* PerfumeTableViewCell.swift */; };
+		9374D40E1C1E01F000826F02 /* PerfumeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9374D40D1C1E01F000826F02 /* PerfumeTableViewController.swift */; };
+		9374D4111C1E11C500826F02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9374D40F1C1E11C500826F02 /* Main.storyboard */; };
+		938803941C0FA33800987517 /* MealTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938803931C0FA33800987517 /* MealTableViewCell.swift */; };
+		938803961C0FD95900987517 /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938803951C0FD95900987517 /* RatingControl.swift */; };
+		938803981C0FD9CC00987517 /* MealTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938803971C0FD9CC00987517 /* MealTableViewController.swift */; };
+		9388039A1C0FDD1500987517 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938803991C0FDD1500987517 /* Meal.swift */; };
+		93B307AB1C1E621700325ED1 /* FurnitureTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B307AA1C1E621700325ED1 /* FurnitureTableViewController.swift */; };
+		93B307AD1C1E623100325ED1 /* FurnitureTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B307AC1C1E623100325ED1 /* FurnitureTableViewCell.swift */; };
+		93B307AF1C1E6B9D00325ED1 /* ElectronicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B307AE1C1E6B9D00325ED1 /* ElectronicTableViewCell.swift */; };
+		93B307B11C1E6BAF00325ED1 /* ElectronicTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B307B01C1E6BAF00325ED1 /* ElectronicTableViewController.swift */; };
+		93B307B31C1E6DFF00325ED1 /* ClothesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B307B21C1E6DFF00325ED1 /* ClothesTableViewController.swift */; };
+		93B307B51C1E6E0F00325ED1 /* ClothesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B307B41C1E6E0F00325ED1 /* ClothesTableViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9304ED1A1C065F5D0066D2D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9304ECFD1C065F5D0066D2D9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9304ED041C065F5D0066D2D9;
+			remoteInfo = SampleBeacon;
+		};
+		9304ED251C065F5D0066D2D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9304ECFD1C065F5D0066D2D9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9304ED041C065F5D0066D2D9;
+			remoteInfo = SampleBeacon;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9304ED051C065F5D0066D2D9 /* SmartShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9304ED081C065F5D0066D2D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9304ED0A1C065F5D0066D2D9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9304ED0F1C065F5D0066D2D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9304ED121C065F5D0066D2D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9304ED141C065F5D0066D2D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9304ED191C065F5D0066D2D9 /* SmartShop.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartShop.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9304ED1D1C065F5D0066D2D9 /* SampleBeaconTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleBeaconTests.swift; sourceTree = "<group>"; };
+		9304ED1F1C065F5D0066D2D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9304ED241C065F5D0066D2D9 /* SmartShop.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartShop.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9304ED281C065F5D0066D2D9 /* SampleBeaconUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleBeaconUITests.swift; sourceTree = "<group>"; };
+		9304ED2A1C065F5D0066D2D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		931DD1C81C128E8A007BFD5E /* FoodViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodViewController.swift; sourceTree = "<group>"; };
+		9374D3FF1C13E45F00826F02 /* CartTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartTableViewCell.swift; sourceTree = "<group>"; };
+		9374D4011C13E63300826F02 /* CartTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartTableViewController.swift; sourceTree = "<group>"; };
+		9374D4031C179D7B00826F02 /* FeedbackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedbackViewController.swift; sourceTree = "<group>"; };
+		9374D4051C1C95E100826F02 /* ProductViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
+		9374D4071C1D18EE00826F02 /* VideoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoTableViewController.swift; sourceTree = "<group>"; };
+		9374D4091C1D191800826F02 /* VideoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoTableViewCell.swift; sourceTree = "<group>"; };
+		9374D40B1C1E01D400826F02 /* PerfumeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerfumeTableViewCell.swift; sourceTree = "<group>"; };
+		9374D40D1C1E01F000826F02 /* PerfumeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerfumeTableViewController.swift; sourceTree = "<group>"; };
+		9374D4101C1E11C500826F02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		938803931C0FA33800987517 /* MealTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MealTableViewCell.swift; path = ../MealTableViewCell.swift; sourceTree = "<group>"; };
+		938803951C0FD95900987517 /* RatingControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
+		938803971C0FD9CC00987517 /* MealTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealTableViewController.swift; sourceTree = "<group>"; };
+		938803991C0FDD1500987517 /* Meal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
+		93B307AA1C1E621700325ED1 /* FurnitureTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FurnitureTableViewController.swift; sourceTree = "<group>"; };
+		93B307AC1C1E623100325ED1 /* FurnitureTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FurnitureTableViewCell.swift; sourceTree = "<group>"; };
+		93B307AE1C1E6B9D00325ED1 /* ElectronicTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ElectronicTableViewCell.swift; sourceTree = "<group>"; };
+		93B307B01C1E6BAF00325ED1 /* ElectronicTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ElectronicTableViewController.swift; sourceTree = "<group>"; };
+		93B307B21C1E6DFF00325ED1 /* ClothesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClothesTableViewController.swift; sourceTree = "<group>"; };
+		93B307B41C1E6E0F00325ED1 /* ClothesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClothesTableViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9304ED021C065F5D0066D2D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9304ED161C065F5D0066D2D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9304ED211C065F5D0066D2D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9304ECFC1C065F5D0066D2D9 = {
+			isa = PBXGroup;
+			children = (
+				9304ED071C065F5D0066D2D9 /* SampleBeacon */,
+				9304ED1C1C065F5D0066D2D9 /* SampleBeaconTests */,
+				9304ED271C065F5D0066D2D9 /* SampleBeaconUITests */,
+				9304ED061C065F5D0066D2D9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9304ED061C065F5D0066D2D9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9304ED051C065F5D0066D2D9 /* SmartShop.app */,
+				9304ED191C065F5D0066D2D9 /* SmartShop.xctest */,
+				9304ED241C065F5D0066D2D9 /* SmartShop.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9304ED071C065F5D0066D2D9 /* SampleBeacon */ = {
+			isa = PBXGroup;
+			children = (
+				938803991C0FDD1500987517 /* Meal.swift */,
+				938803931C0FA33800987517 /* MealTableViewCell.swift */,
+				938803971C0FD9CC00987517 /* MealTableViewController.swift */,
+				9374D3FF1C13E45F00826F02 /* CartTableViewCell.swift */,
+				9374D4011C13E63300826F02 /* CartTableViewController.swift */,
+				931DD1C81C128E8A007BFD5E /* FoodViewController.swift */,
+				938803951C0FD95900987517 /* RatingControl.swift */,
+				9304ED081C065F5D0066D2D9 /* AppDelegate.swift */,
+				9304ED0A1C065F5D0066D2D9 /* ViewController.swift */,
+				9374D4051C1C95E100826F02 /* ProductViewController.swift */,
+				9374D40F1C1E11C500826F02 /* Main.storyboard */,
+				93B307B21C1E6DFF00325ED1 /* ClothesTableViewController.swift */,
+				93B307B41C1E6E0F00325ED1 /* ClothesTableViewCell.swift */,
+				93B307AE1C1E6B9D00325ED1 /* ElectronicTableViewCell.swift */,
+				93B307B01C1E6BAF00325ED1 /* ElectronicTableViewController.swift */,
+				93B307AA1C1E621700325ED1 /* FurnitureTableViewController.swift */,
+				93B307AC1C1E623100325ED1 /* FurnitureTableViewCell.swift */,
+				9374D40B1C1E01D400826F02 /* PerfumeTableViewCell.swift */,
+				9374D40D1C1E01F000826F02 /* PerfumeTableViewController.swift */,
+				9374D4071C1D18EE00826F02 /* VideoTableViewController.swift */,
+				9374D4091C1D191800826F02 /* VideoTableViewCell.swift */,
+				9374D4031C179D7B00826F02 /* FeedbackViewController.swift */,
+				9304ED0F1C065F5D0066D2D9 /* Assets.xcassets */,
+				9304ED111C065F5D0066D2D9 /* LaunchScreen.storyboard */,
+				9304ED141C065F5D0066D2D9 /* Info.plist */,
+			);
+			path = SampleBeacon;
+			sourceTree = "<group>";
+		};
+		9304ED1C1C065F5D0066D2D9 /* SampleBeaconTests */ = {
+			isa = PBXGroup;
+			children = (
+				9304ED1D1C065F5D0066D2D9 /* SampleBeaconTests.swift */,
+				9304ED1F1C065F5D0066D2D9 /* Info.plist */,
+			);
+			path = SampleBeaconTests;
+			sourceTree = "<group>";
+		};
+		9304ED271C065F5D0066D2D9 /* SampleBeaconUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9304ED281C065F5D0066D2D9 /* SampleBeaconUITests.swift */,
+				9304ED2A1C065F5D0066D2D9 /* Info.plist */,
+			);
+			path = SampleBeaconUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9304ED041C065F5D0066D2D9 /* SmartShop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9304ED2D1C065F5D0066D2D9 /* Build configuration list for PBXNativeTarget "SmartShop" */;
+			buildPhases = (
+				9304ED011C065F5D0066D2D9 /* Sources */,
+				9304ED021C065F5D0066D2D9 /* Frameworks */,
+				9304ED031C065F5D0066D2D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SmartShop;
+			productName = SampleBeacon;
+			productReference = 9304ED051C065F5D0066D2D9 /* SmartShop.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9304ED181C065F5D0066D2D9 /* SmartShopTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9304ED301C065F5D0066D2D9 /* Build configuration list for PBXNativeTarget "SmartShopTests" */;
+			buildPhases = (
+				9304ED151C065F5D0066D2D9 /* Sources */,
+				9304ED161C065F5D0066D2D9 /* Frameworks */,
+				9304ED171C065F5D0066D2D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9304ED1B1C065F5D0066D2D9 /* PBXTargetDependency */,
+			);
+			name = SmartShopTests;
+			productName = SampleBeaconTests;
+			productReference = 9304ED191C065F5D0066D2D9 /* SmartShop.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9304ED231C065F5D0066D2D9 /* SmartShopUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9304ED331C065F5D0066D2D9 /* Build configuration list for PBXNativeTarget "SmartShopUITests" */;
+			buildPhases = (
+				9304ED201C065F5D0066D2D9 /* Sources */,
+				9304ED211C065F5D0066D2D9 /* Frameworks */,
+				9304ED221C065F5D0066D2D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9304ED261C065F5D0066D2D9 /* PBXTargetDependency */,
+			);
+			name = SmartShopUITests;
+			productName = SampleBeaconUITests;
+			productReference = 9304ED241C065F5D0066D2D9 /* SmartShop.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9304ECFD1C065F5D0066D2D9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Yihan Dai";
+				TargetAttributes = {
+					9304ED041C065F5D0066D2D9 = {
+						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = 5GZMY4L26Y;
+					};
+					9304ED181C065F5D0066D2D9 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = 9304ED041C065F5D0066D2D9;
+					};
+					9304ED231C065F5D0066D2D9 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = 9304ED041C065F5D0066D2D9;
+					};
+				};
+			};
+			buildConfigurationList = 9304ED001C065F5D0066D2D9 /* Build configuration list for PBXProject "SmartShop" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9304ECFC1C065F5D0066D2D9;
+			productRefGroup = 9304ED061C065F5D0066D2D9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9304ED041C065F5D0066D2D9 /* SmartShop */,
+				9304ED181C065F5D0066D2D9 /* SmartShopTests */,
+				9304ED231C065F5D0066D2D9 /* SmartShopUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9304ED031C065F5D0066D2D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9374D4111C1E11C500826F02 /* Main.storyboard in Resources */,
+				9304ED131C065F5D0066D2D9 /* LaunchScreen.storyboard in Resources */,
+				9304ED101C065F5D0066D2D9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9304ED171C065F5D0066D2D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9304ED221C065F5D0066D2D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9304ED011C065F5D0066D2D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93B307B11C1E6BAF00325ED1 /* ElectronicTableViewController.swift in Sources */,
+				9374D4001C13E45F00826F02 /* CartTableViewCell.swift in Sources */,
+				9374D40A1C1D191800826F02 /* VideoTableViewCell.swift in Sources */,
+				9374D40C1C1E01D400826F02 /* PerfumeTableViewCell.swift in Sources */,
+				93B307B31C1E6DFF00325ED1 /* ClothesTableViewController.swift in Sources */,
+				938803981C0FD9CC00987517 /* MealTableViewController.swift in Sources */,
+				9374D4021C13E63300826F02 /* CartTableViewController.swift in Sources */,
+				9374D4061C1C95E200826F02 /* ProductViewController.swift in Sources */,
+				9374D4041C179D7B00826F02 /* FeedbackViewController.swift in Sources */,
+				931DD1C91C128E8A007BFD5E /* FoodViewController.swift in Sources */,
+				93B307AB1C1E621700325ED1 /* FurnitureTableViewController.swift in Sources */,
+				93B307B51C1E6E0F00325ED1 /* ClothesTableViewCell.swift in Sources */,
+				938803961C0FD95900987517 /* RatingControl.swift in Sources */,
+				9374D4081C1D18EE00826F02 /* VideoTableViewController.swift in Sources */,
+				9304ED0B1C065F5D0066D2D9 /* ViewController.swift in Sources */,
+				9304ED091C065F5D0066D2D9 /* AppDelegate.swift in Sources */,
+				93B307AF1C1E6B9D00325ED1 /* ElectronicTableViewCell.swift in Sources */,
+				93B307AD1C1E623100325ED1 /* FurnitureTableViewCell.swift in Sources */,
+				9388039A1C0FDD1500987517 /* Meal.swift in Sources */,
+				938803941C0FA33800987517 /* MealTableViewCell.swift in Sources */,
+				9374D40E1C1E01F000826F02 /* PerfumeTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9304ED151C065F5D0066D2D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9304ED1E1C065F5D0066D2D9 /* SampleBeaconTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9304ED201C065F5D0066D2D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9304ED291C065F5D0066D2D9 /* SampleBeaconUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9304ED1B1C065F5D0066D2D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9304ED041C065F5D0066D2D9 /* SmartShop */;
+			targetProxy = 9304ED1A1C065F5D0066D2D9 /* PBXContainerItemProxy */;
+		};
+		9304ED261C065F5D0066D2D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9304ED041C065F5D0066D2D9 /* SmartShop */;
+			targetProxy = 9304ED251C065F5D0066D2D9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9304ED111C065F5D0066D2D9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9304ED121C065F5D0066D2D9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		9374D40F1C1E11C500826F02 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9374D4101C1E11C500826F02 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9304ED2B1C065F5D0066D2D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9304ED2C1C065F5D0066D2D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9304ED2E1C065F5D0066D2D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = SampleBeacon/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ELEN.4902.YD2349.SampleBeacon;
+				PRODUCT_NAME = SmartShop;
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		9304ED2F1C065F5D0066D2D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = SampleBeacon/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ELEN.4902.YD2349.SampleBeacon;
+				PRODUCT_NAME = SmartShop;
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		9304ED311C065F5D0066D2D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SampleBeaconTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ELEN.4902.YD2349.SampleBeaconTests;
+				PRODUCT_NAME = SmartShop;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartShop.app/SmartShop";
+			};
+			name = Debug;
+		};
+		9304ED321C065F5D0066D2D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SampleBeaconTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ELEN.4902.YD2349.SampleBeaconTests;
+				PRODUCT_NAME = SmartShop;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartShop.app/SmartShop";
+			};
+			name = Release;
+		};
+		9304ED341C065F5D0066D2D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SampleBeaconUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ELEN.4902.YD2349.SampleBeaconUITests;
+				PRODUCT_NAME = SmartShop;
+				TEST_TARGET_NAME = SampleBeacon;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		9304ED351C065F5D0066D2D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SampleBeaconUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ELEN.4902.YD2349.SampleBeaconUITests;
+				PRODUCT_NAME = SmartShop;
+				TEST_TARGET_NAME = SampleBeacon;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9304ED001C065F5D0066D2D9 /* Build configuration list for PBXProject "SmartShop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9304ED2B1C065F5D0066D2D9 /* Debug */,
+				9304ED2C1C065F5D0066D2D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9304ED2D1C065F5D0066D2D9 /* Build configuration list for PBXNativeTarget "SmartShop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9304ED2E1C065F5D0066D2D9 /* Debug */,
+				9304ED2F1C065F5D0066D2D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9304ED301C065F5D0066D2D9 /* Build configuration list for PBXNativeTarget "SmartShopTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9304ED311C065F5D0066D2D9 /* Debug */,
+				9304ED321C065F5D0066D2D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9304ED331C065F5D0066D2D9 /* Build configuration list for PBXNativeTarget "SmartShopUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9304ED341C065F5D0066D2D9 /* Debug */,
+				9304ED351C065F5D0066D2D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9304ECFD1C065F5D0066D2D9 /* Project object */;
+}
