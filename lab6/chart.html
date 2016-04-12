@@ -1,0 +1,37 @@
+$def with (info)
+<html>
+<head>
+  <title>Python and Java Chart</title>
+  <script type="text/javascript" src="https://www.google.com/jsapi"></script> 
+  <script type="text/javascript">
+    google.load('visualization', '1.1', {packages: ['line']});
+    google.setOnLoadCallback(drawChart);
+
+    function drawChart() {
+
+      var data = google.visualization.arrayToDataTable([
+	      ['The number of Python','The number of streaming']
+	  $for info in info:
+	      ,[$:info[the_number_of_python], $:info[the_number_of_Streaming]]
+      ]);
+
+      var options = {
+        chart: {
+          title: 'Python and Streaming Chart',
+          subtitle: 'number'
+        },
+        width: 900,
+        height: 500
+      };
+
+      var chart = new google.charts.Line(document.getElementById('linechart_material'));
+
+      chart.draw(data, options);
+    }
+  </script> 
+</head>
+
+<body>
+  <div id="linechart_material"></div>
+</body>
+</html>
